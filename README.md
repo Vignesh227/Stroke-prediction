@@ -1,2 +1,5 @@
 # Stroke-prediction 
-Take this quiz, figure out what is going on and take control of your life!!
+Take this quiz, figure out if you have stroke or not!
+
+## Prediction model
+   - Logistic regression
