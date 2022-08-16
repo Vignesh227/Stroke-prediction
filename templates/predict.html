@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Stroke Prediction</title>
+    </head>
+    <!--Google fonts-->
+        
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    
+    <!--Style sheets-->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../static/predictstyles.css">
+     <!-- <link rel="stylesheet" href="{{url_for('static', filename = 'predictstyles.css')}}" media="screen"> -->
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/65bc7f4f38.js" crossorigin="anonymous"></script>
+    
+    </head>
+
+<body>
+    <section id="title">
+        <div class="container-fluid">
+          
+   <!-- Nav Bar -->
+          
+   <nav class="navbar navbar-expand-lg navbar-light ">
+    <a class="navbar-brand" href="{{url_for('index')}}"><img class="nav-bar-image" src = "../static/images/healthcare.png" alt = "healthcare-image" style="margin-right:10px"> Stroke prediction</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link " href="{{url_for('index')}}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link pred" href="{{url_for('bmi')}}">BMIchecker</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{url_for('counsel')}}">Counsel</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{url_for('cta')}}">Contact</a>
+        </li>
+      </ul>
+    </div>
+</nav>     
+
+    <!--SURVEY FORM-->
+<section>
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col">
+        <div class="card card-registration my-4" style="border-left-width:0px;border-right-width:0px;border-top-width:0px;border-bottom-width:0px;margin-top:0px;margin-bottom:0px;margin-left:0ri">
+          <div class="row 0">
+            <div class="col-xl-6 d-none d-xl-block">
+              <img src="../static/images/doc2new.png"
+                alt="Sample photo" class="img-fluid"
+                style="height:788px;vertical-align: bottom;" />
+                
+            </div>
+            <div class="col-xl-6">
+              <div class="card-body p-md-5 text-black">
+                <h3 class="mb-5 text-uppercase">STROKE PREDICTION FORM</h3>
+                <form action="{{url_for('predictAction')}}" method="POST">
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline good-one">
+                      <input type="text" id="pons-name" onkeyup="validateName()" placeholder="Name" name="name" id="form3Example1m" class="name form-control form-control-lg" required/>
+                    </div>
+                    <div class="good-two">
+                      <span id="name-vignesh"></span>
+                    </div> 
+                      
+                  </div>
+                  <div class="col-md-6 mb-4 name-age-div">
+                    <div class="form-outline good-one">
+                      <input type="text" id="pons-age" onkeyup="validateAge()" placeholder="Age" name="age" id="form3Example1n" class="form-control form-control-lg" required/>
+                    </div>
+                    <div class="good-two">
+                      <span id="age-vignesh"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                      <select name="maritalstatus" id="pons" required>
+                        <option value="" disabled selected hidden>Marital Status</option>
+                          <option value="married">Yes, Im married</option>
+                          <option value="not married">No, Im single</option>
+                        </select>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <select name="Worktype" id="pons" required>
+                      <option value="" disabled selected hidden>Work type</option>
+                      <option value="privatejob">I do have a private job</option>
+                      <option value="govtemp">Im a Government employee</option>
+                      <option value="selfemp">Im self-employeed</option>
+                    </select>
+                  </div>
+                </div>
+        
+                <div class="form-outlinen mb-4">
+                  <select name="Residence" required>
+                    <option value="" disabled selected hidden>Residence type</option>
+                    <option value="urban">I live in an urban city</option>
+                    <option value="rural">I reside in a rural setting</option>
+                  </select>
+                </div>
+
+                <div class="d-md-flex justify-content-start align-items-center mb-4 py-2">
+
+                  <h6 class="mb-0 me-4">Gender: </h6>
+
+                  <div class="form-check form-check-inline mb-0 me-4">
+                    <input class="form-check-input" type="radio" name="gender" id="femaleGender" value="Female" required/>
+                    <label class="form-check-label" for="femaleGender">Female</label>
+                  </div>
+
+                  <div class="form-check form-check-inline mb-0 me-4">
+                    <input class="form-check-input" type="radio" name="gender" id="maleGender" value="Male" required/>
+                    <label class="form-check-label" for="maleGender">Male</label>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline good-one">
+                      <input type="text" id="pons-bmi" onkeyup="validateBmi()" placeholder="BMI (Range:15-45)" name="bmi" id="form3Example1x" class="form-control form-control-lg" required/>
+                    </div>
+                    <div class="good-two">
+                      <span id="bmi-vignesh"></span>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline good-one">
+                      <input type="text" id="pons-glu" onkeyup="validateGlu()" placeholder="Glucose level " name="gluclevel" id="form3Example1z" class="form-control form-control-lg" required/>
+                    </div>
+                    <div class="good-two">
+                      <span id="glu-vignesh"></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-outlinen mb-4">
+                  <select name="Smoke" required>
+                    <option value="" disabled selected hidden>Do you smoke?</option>
+                    <option value="formerly-smoked">I used to smoke once upon</option>
+                    <option value="smoker">Yes, I do smoke frequently</option>
+                    <option value="non-smoker">No, I had never smoked before</option>
+                  </select>
+                </div>               
+
+                <div class="form-outlinen mb-4">
+                  <select name="Hypertension" required>
+                    <option value="" disabled selected hidden>Have you been diagnosed with hypertension?</option>
+                    <option value="hypten">Yes, I do have hypertension</option>
+                    <option value="nohypten">No, I dont possess</option>
+                  </select>
+                </div>
+          
+
+                <div class="form-outlinen mb-4">
+                  <select name="Heartdisease" required>
+                    <option value="" disabled selected hidden>Do you have any other heart diseases?</option>
+                    <option value="heartdis">Yes, I have some heart-related problems</option>
+                    <option value="noheartdis">No, I dont have any</option>
+                  </select>
+                </div>
+                
+                <div class="d-flex justify-content-end pt-3">
+                 <input type="reset" class="btn" value="Reset" style="margin-right: 25px;">
+                 <input type="submit" class="btn" value="Predict" onclick="return validateForm()">
+                
+                </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    
+<h3>{{a}}</h3>
+<br><br>
+<script type="text/javascript" src="../static/predict.js"></script>
+</body>
+</html>     
+        

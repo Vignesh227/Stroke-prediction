@@ -1,0 +1,108 @@
+body {
+    margin : 0;
+    background-color: #5EE6EB;
+    color : black;
+    font-family: 'Merriweather', serif;
+}
+h1 {
+    font-family: 'Merriweather', serif;
+    line-height : 1.5;  
+    font-size : 3.5rem;
+    font-weight: 900;
+}
+h2 {
+    font-family: 'Merriweather', serif;
+    line-height : 1.5;  
+    font-size : 1rem;
+    font-weight: 400;
+}
+
+
+/* Navigation bar */
+.nav-bar-image{
+    width : 8%;
+}
+.navbar  {
+    padding-top: 2rem;
+    padding-left: 4rem ;
+    padding-right: 4rem;
+    padding-bottom: 2rem;
+}
+.navbar-brand {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.nav-item {
+    padding : 0 18px 0 18px;
+
+}
+.nav-link {
+    font-size : 1.2rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+
+/* Title */
+.pad {
+    padding-left: 7rem;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+.get-started-buttons {
+    padding-left: 9rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 3rem;
+    font-size: larger;
+}
+.title-image {
+    width : 100%;
+    padding-top: 1.5rem;
+}
+.get-started{
+    color:white;
+}
+/* Footer */
+
+
+.foot, .copyright{
+    text-align: center;
+}
+.footer-icon {
+    padding : 20px 5px;
+}
+a{
+    text-decoration: none;
+}
+.insta{
+    color:#E1306C;
+}
+.insta:hover{
+    color:rgb(151, 40, 40);    
+}
+.fb{
+    color: #4267B2;
+}
+.fb:hover{
+    color:rgb(20, 44, 132);
+}
+.twtr{
+    color:#1DA1F2;
+}
+.twtr:hover{
+    color:rgb(22, 94, 158);
+}
+.mail{
+    color:#B23121;
+}
+.mail:hover{
+    color:rgb(117, 40, 40);
+}
+.get-started{
+    color:white;
+}
+.get-started:hover{
+    color:#EEEEEE;
+}
+

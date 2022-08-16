@@ -1,0 +1,72 @@
+body {
+    margin : 0;
+    background-color: #5EE6EB;
+    color : black;
+    font-family: 'Merriweather', serif;
+}
+
+/* Navigation bar */
+
+.nav-bar-image{
+    width : 8%;
+}
+.navbar  {
+    padding-top: 2rem;
+    padding-left: 4rem ;
+    padding-right: 4rem;
+    padding-bottom: 2rem;
+}
+.navbar-brand {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.nav-item {
+    padding : 0 18px 0 18px;
+
+}
+.nav-link {
+    font-size : 1.2rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+
+body{
+    background-image: linear-gradient(to right,#010e1a ,#004883);
+    
+    margin-top:20px;
+}
+.btn-white {
+    background-color: #fff;
+    border-color: #e7eaf3;
+}
+.radius-15 {
+    border-radius: 15px;
+}
+.contacts-social a {
+    font-size: 16px;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    background: #ffffff;
+    border: 1px solid #eeecec;
+    text-align: center;
+    border-radius: 50%;
+    color: #2b2a2a;
+}
+
+.bg-info {
+    background-color: #0dcaf0!important;
+}
+
+.bg-danger {
+    background-color: #fd3550!important;
+}
+
+.bg-warning {
+    background-color: #ffc107!important;
+}
+
+.cta {
+    padding-top : 25px;
+}
