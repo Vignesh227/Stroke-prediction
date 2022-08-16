@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+/* Navigation bar */
+.nav-bar-image{
+    width : 8%;
+}
+.navbar  {
+    padding-top: 2rem;
+    padding-left: 4rem ;
+    padding-right: 4rem;
+    padding-bottom: 2rem;
+}
+.navbar-brand {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.nav-item {
+    padding : 0 18px 0 18px;
+
+}
+.nav-link {
+    font-size : 1.2rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+/* nav bar end */
+
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    /*background-color:#2398f2;*/
+    background-color:#44cfd4;
+   
+    /*background: #046db9;*/
+}
+.container{
+    /*background-color: #ffffff;*/
+    /*background-color: #b4e2fc;*/
+    background-color: #9aebf9;
+    padding: 30px 30px;
+    width: 1000px;
+    height: 480px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 57%;
+    margin-left:50%;
+    margin-right:auto;
+    /*font-family: 'Poppins',sans-serif;*/
+    /*font-family: 'Merriweather', serif;*/
+    
+    box-shadow: 25px 25px 30px rgba(0,0,0,0.15);
+    padding:0;
+}
+
+.container-one{
+    width:500px;
+}
+.container-two{
+    width:500px;
+    padding-left: 70px;;
+    padding-right: 70px;
+}
+.container-one img{
+    height: 408px;
+    margin-left: 0;
+    bottom:0;
+}
+h1{
+    /*background: #ca0f0f;*/
+    background-color: #9f241b;
+   /* background-color: #1a75bf;*/
+	color: white;
+	text-align: center;
+	font-size: 23px;
+	letter-spacing: 1px;
+	margin-top: 0px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    margin-left: 0px;
+    font-weight:bold;
+}
+
+
+span{
+    font-weight: 500;
+    width:50px;
+    padding-left: 6px;
+    line-height: 250%;
+    font-weight:bold;
+}
+input[type="range"]{
+    width: 80%;
+    height: 3.5px;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #000000;
+    border-radius: 3px;
+    outline: none;
+}
+input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    height: 15px;
+    width: 15px;
+    background-color: #9f241b;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#result{
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #7DCE13;
+    padding-top:15px;
+}
+#category{
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 1px;
+    padding-bottom:22px;
+    color:white;
+}
+.display{
+/*box-shadow: 0 0 20px rgba(0,139,253,0.25);*/
+margin-bottom: 60px;
+margin-top: 70px;
+background-color: rgb(67, 67, 65);
+border-radius: 10px;
+}
+
+@media (max-width:500px){
+    .img-fluid{
+        display: none;
+    }
+    .py-2 {
+        display: flex;
+    }
+    .py-5{
+        padding-top: 0rem !important;
+    }
+    .navbar {
+        padding-bottom: 0rem;
+        padding-top: 0.7rem;
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+    }
+    .navbar-brand {
+        width: 60%;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        text-align: center;
+        color: rgba(0,0,0,.55);
+    }
+    .nav-link {
+        display: block;
+        padding: 0.5rem 1rem;
+        color: #0d6efd;
+        text-decoration: none;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    }
+    
+    .nav-bar-image {
+        width: 20%;
+    }
+    h1 {
+        /* background: #ca0f0f; */
+        background-color: #9f241b;
+        /* background-color: #1a75bf; */
+        color: white;
+        text-align: center;
+        font-size: 23px;
+        letter-spacing: 1px;
+        margin-top: 0px;
+        padding-top: 28px;
+        padding-bottom: 20px;
+        margin-left: 0px;
+        font-weight: bold;
+    }
+    .container{
+        width:100%;
+        height:418px;
+        top:53%;
+    }
+    .container-one {
+        width: 0px;
+    }
+    .display {
+        /* box-shadow: 0 0 20px rgb(0 139 253 / 25%); */
+        margin-bottom: 60px;
+        margin-top: 2rem;
+        background-color: rgb(67, 67, 65);
+        border-radius: 10px;
+    }
+    .container-two {
+        width: 500px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}

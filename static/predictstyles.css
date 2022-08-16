@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+    font-size: 1rem;
+    line-height: 2.15em;
+    padding-left: .75em;
+    padding-right: .75em;
+}
+.card-registration .select-arrow
+{
+    top: 13px;
+}
+.py-5{
+    padding-top: 1.4rem !important;
+}
+/* Navigation bar */
+.nav-bar-image{
+    width : 8%;
+}
+.navbar  {
+    padding-top: 2rem;
+    padding-left: 4rem ;
+    padding-right: 4rem;
+    padding-bottom: 2rem;
+}
+.navbar-brand {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.nav-item {
+    padding : 0 18px 0 18px;
+
+}
+.nav-link {
+    font-size : 1.2rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+
+select{
+    border-radius: 4px;
+    width:219px;
+    height: 45px;
+    color: grey;
+    border: 0.5px solid lightgrey;
+  }
+  
+#pons,#pons-name, #pons-age,#pons-bmi,#pons-glu,.form-ouline{ 
+    width:219px;
+    height: 43px;
+    padding:6px 35px 9px 13px;
+    font-size:17px;
+}
+
+.form-outlinen select{
+    width: 461px;
+    height: 45px;
+    padding:6px 4px 9px 13px;
+    font-size:17px;
+}
+section{
+    background-color: #00cccc;
+}
+h2{
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
+h3{
+    text-align: center;
+    padding-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
+body{
+    margin:0;
+}
+.btn{
+    background-color: #00cccc;
+    color: white;
+    transition-duration: .4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+  
+.btn:hover{
+    background-color: black;
+    color:#00cccc;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* Sub div 1 */
+.good-one{
+    width:90%;
+    display:flex;
+    float:left;
+}
+
+/* Sub div 2*/
+.good-two{
+    width:10%;
+    display:flex;
+    float:right;
+}
+#name-vignesh, #age-vignesh, #bmi-vignesh, #glu-vignesh{  
+    display:flex;
+}
+#name-vignesh .check, #age-vignesh .check,#bmi-vignesh .check,#glu-vignesh .check {
+    padding-top:13px;
+    color:#1bcf3f;
+}
+#name-vignesh .wrong, #age-vignesh .wrong, #bmi-vignesh .wrong,#glu-vignesh .wrong{
+    padding-top: 9px;
+}
+
+/* CSS for mobile devices */
+@media (max-width:640px){
+    #pons,#pons-name, #pons-age,#pons-bmi,#pons-glu,.form-ouline, .form-outlinen select{
+        width:320px;
+    }
+    
+    #name-vignesh .check, #age-vignesh .check, #bmi-vignesh .check, #glu-vignesh .check {
+        padding-left: 13px;
+        padding-top: 13px;
+        color: #1bcf3f;
+    }
+    #name-vignesh .wrong, #age-vignesh .wrong, #bmi-vignesh .wrong, #glu-vignesh .wrong {
+        padding-left: 9px;
+        padding-top: 9px;
+    }
+    .py-2 {
+        display: flex;
+    }
+    .py-5{
+        padding-top: 0rem !important;
+    }
+    .py-5 {
+        padding-bottom: 1.5rem!important;
+    }
+    .navbar {
+        padding-bottom: 0rem;
+        padding-top: 0.7rem;
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        text-align: center;
+        color: rgba(0,0,0,.55);
+    }
+    .nav-bar-image {
+        width: 23%;
+    }
+    .mb-5 {
+        margin-bottom: 2rem!important;
+    }
+    h3{
+        padding-bottom: 0px;
+    }
+    .navbar-light .navbar-brand {
+        width: 50%;
+    }
+}

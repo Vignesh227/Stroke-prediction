@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+body {
+    margin : 0;
+    background-color: #5EE6EB;
+    color : black;
+    font-family: 'Merriweather', serif;
+}
+
+/* Navigation bar */
+
+.nav-bar-image{
+    width : 8%;
+}
+.navbar  {
+    padding-top: 2rem;
+    padding-left: 4rem ;
+    padding-right: 4rem;
+    padding-bottom: 2rem;
+}
+.navbar-brand {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.nav-item {
+    padding : 0 18px 0 18px;
+
+}
+.nav-link {
+    font-size : 1.2rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+
+body{
+    background-image: linear-gradient(to right,#010e1a ,#004883);
+    
+    margin-top:20px;
+}
+.btn-white {
+    background-color: #fff;
+    border-color: #e7eaf3;
+}
+.radius-15 {
+    border-radius: 15px;
+}
+.contacts-social a {
+    font-size: 16px;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    background: #ffffff;
+    border: 1px solid #eeecec;
+    text-align: center;
+    border-radius: 50%;
+    color: #2b2a2a;
+}
+
+.bg-info {
+    background-color: #0dcaf0!important;
+}
+
+.bg-danger {
+    background-color: #fd3550!important;
+}
+
+.bg-warning {
+    background-color: #ffc107!important;
+}
+
+.cta {
+    padding-top : 25px;
+}
+h2{
+    display: none;
+}
+
+/* CSS for mobile devices */
+@media (max-width:640px){
+    .py-2 {
+        display: flex;
+    }
+    .py-5{
+        padding-top: 0rem !important;
+    }
+    .py-5 {
+        padding-bottom: 1.5rem!important;
+    }
+    .navbar {
+        padding-bottom: 0rem;
+        padding-top: 0.7rem;
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+        text-align: center;
+        color: rgb(195, 193, 193);
+    }
+    .nav-bar-image {
+        width: 12%;
+    }
+    .navbar-brand {
+        width: 80%;
+    }
+    h2{ 
+        margin-top: 2rem;
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+        display: block;
+        color:white;
+    }
+    .col{
+        margin-bottom:2rem;
+    }
+}
