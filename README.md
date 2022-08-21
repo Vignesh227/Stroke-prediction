@@ -1,5 +1,5 @@
 # Stroke-prediction 
-Take this quiz, figure out if you have stroke or not!
+Take this quiz, figure out if you are prone to stroke or not!
 
 ## Prediction model
    - Logistic regression
