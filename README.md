@@ -27,3 +27,8 @@ Take this quiz, figure out if you are prone to stroke or not!
 <img width="952" alt="counselpage1" src="https://user-images.githubusercontent.com/96369223/207112723-1f96033f-3fcd-458b-960c-dc42ff913489.PNG">
 
 <img width="960" alt="counselpage2" src="https://user-images.githubusercontent.com/96369223/207112755-25ed7342-0a2f-409f-aa35-f186dd74c390.PNG">
+
+## Contact Page
+
+![image](https://github.com/Vignesh227/Stroke-prediction/assets/96369223/b25a14e1-3437-43bc-8a0f-62df80eb3ac6)
+
