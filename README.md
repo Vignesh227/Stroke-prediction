@@ -8,7 +8,7 @@ Take this quiz, figure out if you are prone to stroke or not!
 
 ## Home Page
 
-<img width="960" alt="homepage ss" src="https://user-images.githubusercontent.com/96369223/207111727-86d65f0c-2e55-434d-a087-74554528be7a.PNG">
+![image](https://github.com/Vignesh227/Stroke-prediction/assets/96369223/0ecccc8d-d193-45b7-8ebe-c08223f6f632)
 
 ## Predict Page 
 
